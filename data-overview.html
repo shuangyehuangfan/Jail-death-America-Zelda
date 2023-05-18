@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Overview - Jail Deaths in America</title>
+    <link rel="stylesheet" href="css/data-overview.css">  <!-- linking the css file -->
+    <script src="js/data-overview.js"></script>  <!-- linking the javascript file -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Jail Deaths in America</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="data-overview.html">Data Overview</a></li>
+                <li><a href="detailed-data.html">Literatures review</a></li>
+                <li><a href="resources.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Comparative analysis -->
+    <section>
+        <h2>Comparative analysis</h2>
+        <!-- Insert charts and graphs here -->
+        <section id="image-section">
+            <img src="images/comparative_analysis1.jpg" alt="comparative analysis1">
+    </section>
+
+    <!-- Analytical Parameters Dropdown Section -->
+    <section>
+        <h2>Analytical Parameters</h2>
+        <select id="parameters-dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="Suicide">Suicide</option>
+            <option value="Drugs / Alcohol">Drugs / Alcohol</option>
+        </select>
+        <!-- Display selected parameter data here -->
+    <div id="parameter-content1">
+        <!-- Content will be added here by JavaScript -->
+    </div>
+    
+    <!-- Additional Parameter Dropdown (Initially hidden) -->
+    <select id="additional-dropdown" style="display: none;">
+        <option value="">--Please choose an option--</option>
+        <option value="Age">Age</option>
+        <option value="Gender">Gender</option>
+        <option value="Race">Race</option>
+    </select>
+
+        <!-- Display selected parameter data here -->
+        <div id="parameter-content2">
+            <!-- Content will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2023 RTU. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

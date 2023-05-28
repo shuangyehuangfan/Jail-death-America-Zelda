@@ -70,7 +70,8 @@ select {
 #parameter-content1 img, #parameter-content2 img {
     margin: auto; /* center the image */
     display: block; /* allow the image to be centered */
-    max-width: 100%; /* make the image responsive */
+    width: 75%; /* set the image width to 75% */
+    height: auto; /* automatically adjust the height based on the width */
 }
 
 

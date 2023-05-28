@@ -54,6 +54,50 @@ section ul li a {
     text-decoration: none;
 }
 
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  /* This makes sure the elements wrap to next line if the screen size is too small */
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.team-member {
+    width: 100%; /* On small screens, each member gets their own line */
+}
+
+
+@media screen and (min-width: 600px) {
+    .team-member {
+        flex: 1 0 30%;  /* Flex grow, shrink, basis */
+        margin: 15px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.065);
+        text-align: center;
+    }    
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;   /* Change to auto for images to occupy the space based on their aspect ratio */
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid red; /* for debugging */
+}
+
+
+
+.team-member h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
 /* Footer */
 footer {
     background-color: #255eb3a1; /* dark blue */
@@ -64,4 +108,5 @@ footer {
     width: 100%;
     bottom: 0;
   }
+  
   

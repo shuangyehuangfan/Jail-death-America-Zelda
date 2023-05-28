@@ -89,7 +89,7 @@ section {
     height: auto;   /* Change to auto for images to occupy the space based on their aspect ratio */
     object-fit: cover;
     overflow: hidden;
-    border: 1px solid red; /* for debugging */
+    border: 1px solid rgba(7, 28, 213, 0.51); /* for debugging */
 }
 
 

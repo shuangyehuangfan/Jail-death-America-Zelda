@@ -18,18 +18,43 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="data-overview.html">Data Overview</a></li>
                 <li><a href="detailed-data.html">Literatures review</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
                 <li><a href="resources.html">About us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Comparative analysis -->
-    <section>
-        <h2>Comparative analysis</h2>
-        <!-- Insert charts and graphs here -->
-        <section id="image-section">
-            <img src="images/comparative_analysis1.jpg" alt="comparative analysis1">
-    </section>
+    <p><strong>Map of Jail Deaths in America</strong> gives an overview of the dataset and insight into the total number of deaths at each location recorded in the study. Six states are not included in the study data, five of them Connecticut, Delaware, Hawaii, Rhode Island, and Vermont all operate as unified state correctional agencies, while Alaska uses a hybrid model that also relies on state-run facilities.  </p>
+    <p>The parameters listed in the map details are State, County, Jail, and number of deaths. Los Angeles County Sheriff's Department (CA, Los Angeles) recorded the highest number of deaths, with a total of 317 deaths. In contrast, the lowest number of deaths can be seen in several locations, such as Aroostook County Jail (ME, Aroostook), Clark County Jail (IN, Clark), Tuscaloosa County Jail (AL, Tuscaloosa), and elsewhere. In general, data shows a correlation between American population and places where a higher number of deaths can be observed. </p>
+
+    <div class='tableauPlaceholder' id='viz1685263086785' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Map of Jail Deaths in America ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B5&#47;B5Q693STZ&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='path' value='shared&#47;B5Q693STZ' /> 
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B5&#47;B5Q693STZ&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1685263086785');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
 
     <!-- Analytical Parameters Dropdown Section -->
     <section>
@@ -44,12 +69,14 @@
         <!-- Content will be added here by JavaScript -->
     </div>
     
+
     <!-- Additional Parameter Dropdown (Initially hidden) -->
     <select id="additional-dropdown" style="display: none;">
         <option value="">--Please choose an option--</option>
         <option value="Age">Age</option>
         <option value="Gender">Gender</option>
         <option value="Race">Race</option>
+        <option value="Rates">Rates</option>
     </select>
 
         <!-- Display selected parameter data here -->

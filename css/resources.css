@@ -75,10 +75,10 @@ section {
 
 @media screen and (min-width: 600px) {
     .team-member {
-        flex: 1 0 16.67%;  /* Flex grow, shrink, basis */
-        margin: 15px;
+        flex: 1 0 30%;  /* Flex grow, shrink, basis */
+        margin: 10px;
         padding: 20px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.065);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.065);
         text-align: center;
     }    
 }

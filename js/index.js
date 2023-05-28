@@ -1,33 +1,27 @@
-// Get the form element
-var form = document.querySelector('form');
+let data = [];
 
 // Load the dataset
-Papa.parse("all_death.csv", {
+Papa.parse('all_deaths.csv', {
     download: true,
     header: true,
+    dynamicTyping: true,
     complete: function(results) {
-        window.dataset = results.data;
+        data = results.data;
     }
 });
 
-// Listen for the form submission
-document.querySelector('form').addEventListener('submit', function(event) {
-    // Prevent the form from being submitted normally
+function searchData(event) {
     event.preventDefault();
-    search();
-});
-
-function search() {
-    var input, filter, filteredData;
-    input = document.getElementById('search-bar');
-    filter = input.value.toUpperCase();
-    // Filter the dataset based on the filter text
-    filteredData = window.dataset.filter(function(row) {
-        // Check if any of the fields in the row match the filter text
-        return Object.values(row).some(function(field) {
-            return field.toUpperCase().includes(filter);
-        });
+    const searchValue = document.getElementById('search-bar').value;
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';  // Clear previous results
+    data.forEach(item => {
+        for (const property in item) {
+            if (item[property].toString().includes(searchValue)) {
+                // If the search value is in the item, show it
+                resultsDiv.innerHTML += JSON.stringify(item) + '<br>';
+                break;
+            }
+        }
     });
-    // Now you have the filtered data. You can display this to the user in some way.
-    console.log(filteredData);
 }
